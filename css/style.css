@@ -31,7 +31,8 @@ header, footer{
 }
 
 #hero img{
-    width:400px;
+    max-width: 400px;
+    width: 100%;
 }
 
 
