@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--body contains all content shown to a visitor-->
+    
+    <header>
+        <!--the header shows logo and page title-->
+
+        <img src="img/logo-96X96.svg" alt="blue origami logo">
+        <h1>Web Dev I</h1>
+
+    </header>
+
+    <main>
+        <!--the main envelops important page content-->
+
+        <section id="hero">
+            <!--hero sectio: shows profile image, name &location-->
+            <img src="img/avataaars.png" alt="avatar picture of me">
+
+            <div>
+                <p>Amir Vince Zaman</p>
+                <p>Somerville. NJ</p>
+            </div>
+            <!--close hero section-->
+        </section>
+
+        <section id="bio">
+            <!--bio section: personal info (not too personal)-->
+            <div>
+                <p>I want to be...</p>
+                <p>as happy as an oragatang eating an orange</p>
+            </div>
+
+            <!--end bio section-->
+        </section>
+
+        <section id="hobbies">
+            <hr></hr>
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Drawing</li>
+                <li>Herping</li>
+                <li>Running</li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <hr></hr>
+            <h2>Photo Gallery</h2>
+            <figure>
+                <img src="img/castle-640w.jpg" alt="drawing of a castle with salamanders">
+                <figcaption>My little friends</figcaption>
+            </figure>
+            <figure>
+                <img src="img/octocake-640w.jpg" alt="digital drawing of an octopus with cake">
+                <figcaption>Happy birthday</figcaption>
+            </figure>
+            <figure>
+                <img src="img/squishmallow-640w.jpg" alt="drawing of a bunch of squishmallow pillows">
+                <figcaption>More of my friends</figcaption>
+            </figure>
+        </section>
+
+       
+        <article id="lit">  
+            <hr></hr>    
+            <h2>Article</h2>
+            <div>
+                <p>There was no mirror, at that date, in my room; that which stands beside me as I write, was brought there later on and for the very purpose of these transformations. The night however, was far gone into the morning--the morning, black as it was, was nearly ripe for the conception of the day--the inmates of my house were locked in the most rigorous hours of slumber; and I determined, flushed as I was with hope and triumph, to venture in my new shape as far as to my bedroom. I crossed the yard, wherein the constellations looked down upon me, I could have thought, with wonder, the first creature of that sort that their unsleeping vigilance had yet disclosed to them; I stole through the corridors, a stranger in my own house; and coming to my room, I saw for the first time the appearance of Edward Hyde.</p>
+
+                <p>I must here speak by theory alone, saying not that which I know, but that which I suppose to be most probable. The evil side of my nature, to which I had now transferred the stamping efficacy, was less robust and less developed than the good which I had just deposed. Again, in the course of my life, which had been, after all, nine tenths a life of effort, virtue and control, it had been much less exercised and much less exhausted. And hence, as I think, it came about that Edward Hyde was so much smaller, slighter and younger than Henry Jekyll. Even as good shone upon the countenance of the one, evil was written broadly and plainly on the face of the other. Evil besides (which I must still believe to be the lethal side of man) had left on that body an imprint of deformity and decay. And yet when I looked upon that ugly idol in the glass, I was conscious of no repugnance, rather of a leap of welcome. This, too, was myself. It seemed natural and human. In my eyes it bore a livelier image of the spirit, it seemed more express and single, than the imperfect and divided countenance I had been hitherto accustomed to call mine. And in so far I was doubtless right. I have observed that when I wore the semblance of Edward Hyde, none could come near to me at first without a visible misgiving of the flesh. This, as I take it, was because all human beings, as we meet them, are commingled out of good and evil: and Edward Hyde, alone in the ranks of mankind, was pure evil.</p>  
+            </div>
+        </article>
+
+        <section id="video">
+            <hr></hr> 
+            <h2>A Short Video</h2>
+            <figcaption>Lips the Gecko</figcaption>
+            <div class="videowrapper">
+            <iframe src="https://www.youtube.com/embed/y3g7A_467yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="contact">
+
+            <h2>Contact Us:</h2>
+
+            <form id="contactForm" name="contactForm" action="" method="post" data-nelify="true">
+
+                <fieldset>
+                    <legend>Contact Form</legend>    
+
+
+                    <div id="formElements">
+
+                    <!--name-->
+                    <label for="name">Name (required)</label>
+                    <input type="next" id="name" name="name" required>
+
+                    <!--Email-->
+                    <label for="email">Email (required)</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <!--Phone-->
+                    <label for="tel">Phone (optional)</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <!--Phone Type-->
+                    <label for="phonetype">Phone Type (optional)</label>
+                    <select id="phonetype" name="phonetype">
+                        <option value="">Select Phone Type</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Work">Work</option>
+                        <option value="Home">Home</option>
+                    </select>
+
+                    <!--Message-->
+                    <label for="message">Message (optional)</label>
+                    <textarea id="message" name="message" rows="8"></textarea>
+
+                    <!--Reply-->
+                    <fieldset>
+                        <legend>Would you like a reply?</legend>
+
+                        <ul>
+                            <li>
+                                <input type="radio" id="message-yes" name="reply" value="Yes a reply please.">
+                                <label for="message-yes">Yes a reply would be nice.</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="message-no" name="reply" checked value="No, thanks.">
+                                <label for="message-no">No, thanks.</label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <!--Submit-->
+                    <button type="submit">Send</button>
+
+                    </div>
+
+                </fieldset>
+               
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        ©2022 - Amir Vince Zaman
+
+    </footer>
+
+</body>
+</html>
